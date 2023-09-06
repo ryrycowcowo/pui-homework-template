@@ -1,22 +1,26 @@
+/* Universal selector that sets padding & margin to 0px */
 * {
     padding: 0px;
     margin: 0px auto;
 }
 
+/* Sets logo to 400px */
 #logo {
     width: 400px;
 }
 
+/* Bolds horizontal line & adds margins below */
 hr {
     border: 2px solid black;
     margin-bottom: 16px;
 }
 
+/* Sets font for all text within body */
 body {
     font-family: 'PT Sans', 'Arial', 'Helvetica', 'San Serif';
 }
 
-
+/* Styles navigation menu titles and highlights active page */
 .navigation {
     font-size: medium;
     text-transform: uppercase;
@@ -30,7 +34,7 @@ a {
     font-weight: bold;
 }
 
-
+/* Styles h2 & centers elements */
 h2 {
     font-size: larger;
     font-weight: normal;
@@ -40,7 +44,8 @@ h2 {
     margin: 8px;
 }
 
-
+/* -----Index page----- */
+/* Styles cinnamon roll item boxes & adds hover interactions */
 .item, .config {
     display: block;
     margin-left: auto;
@@ -57,12 +62,14 @@ h2 {
     font-weight: normal;
 }
 
+/* Styles gallery item images */
 .gallery_image {
     border: 2px solid black;
     margin: 8px;
     width: 400px;
 }
 
+/* Styles item name and price */
 .item_info {
     margin: 8px;
 }
@@ -70,20 +77,24 @@ h2 {
     text-decoration: underline;
 }
 
+/* -----Product Detail page----- */
+/* Styles product detail image */
 .detail_image {
     border: 2px solid black;
     width: 600px;
 }
 
+/* Left-aligns item description and dropdown menu name */
 .item_description, .menu_name {
     text-align: left;
     width: 200px;
 }
 
+/* Styles dropdown menus */
 .dropdown {
     border: 2px solid black;
     display: inline-block;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', 'Arial', 'Helvetica', 'San Serif';
     font-size: 16px;
     text-align: left;
 
@@ -91,12 +102,14 @@ h2 {
     height: 28px;
 }
 
+/* Styles price in Product Detail page */
 .price {
     display: inline-block;
     font-weight: bold;
     margin: 10px;
 }
 
+/* Styles both Add to Cart and Checkout buttons */
 button {
     background-color: yellow;
     border: 2px solid black;
@@ -108,6 +121,8 @@ button {
     text-align: center;
 }
 
+/* -----Cart page----- */
+/* Styles cart items and Remove option in Cart page */
 .item1 {
     display: block;
     margin-left: auto;
@@ -118,11 +133,11 @@ button {
 }
 .cart_items {
     border: 2px solid black;
-    /* margin: 8px; */
     width: 200px;
 }
 .remove {
     font-size: x-small;
     font-weight: bold;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
