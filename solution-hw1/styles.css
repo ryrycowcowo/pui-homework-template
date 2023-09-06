@@ -13,7 +13,7 @@ hr {
 }
 
 body {
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', 'Arial', 'Helvetica', 'San Serif';
 }
 
 
@@ -121,7 +121,7 @@ button {
     /* margin: 8px; */
     width: 200px;
 }
-#remove {
+.remove {
     font-size: x-small;
     font-weight: bold;
     margin-bottom: 10px;
