@@ -18,23 +18,24 @@
 
         <hr>
 
-        <h1>
-          <a id = "products" href = "./index.html">Products</a>
-          <br>
-          <a href = "./shopping_cart.html">Cart</a>
-        </h1>
+        <p class = "navigation center">
+          <a href = "./index.html">Products</a>
+          <br><br>
+          <a class = "active_page" href = "./shopping_cart.html">Cart</a>
+        </p>
 
         <br><br>
       </header>
 
-      <section id = "content">
+      <section class = "content">
 
-        <h2>Shopping Cart</h2>
+        <h2 class = "center">Shopping Cart</h2>
 
-        <div id = "cart_item">
-          <img src = "../assets/products/original-cinnamon-roll.jpg"/>
-
-          <p class = "item_info">
+        <div class = "item1">
+          <img class = "cart_items" src = "../assets/products/original-cinnamon-roll.jpg"/>
+          <p id = "remove">Remove</p>
+          
+          <p>
             Original Cinnamon Roll
             <br>
             Glazing: Keep original
@@ -43,13 +44,14 @@
             <br><br>
           </p>
 
-          <h3>$2.49</h3>
+          <h2 class = "item_price">$2.49</h2>
         </div>
 
-        <div id = "cart_item">
-          <img src = "../assets/products/double-chocolate-cinnamon-roll.jpg"/>
+        <div class = "item1">
+          <img class = "cart_items" src = "../assets/products/double-chocolate-cinnamon-roll.jpg"/>
+          <p id = "remove">Remove</p>
 
-          <p class = "item_info">
+          <p>
             Double Chocolate Cinnamon Roll
             <br>
             Glazing: Sugar milk
@@ -58,14 +60,15 @@
             <br><br>
           </p>
 
-          <h3>$27.45</h3>
+          <h2 class = "item_price">$27.45</h2>
         </div>
 
         <hr>
 
-        <div id = "checkout">
-          <h3>Total: $29.94</h3> 
-          <button value = "Checkout">Checkout</button>
+        <div class = "config center">
+          <h2 class = "item_price">Total: $29.94</h2>
+          <br>
+          <button>Checkout</button>
         </div>
 
       </section>
