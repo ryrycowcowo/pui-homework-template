@@ -5,6 +5,7 @@
     <meta charset = "UTF-8">
     <link rel = "stylesheet" href = "styles.css">
     <title>Product Details</title>
+    <script type = "text/javascript" defer src = "js/main.js"></script>
   </head>
   
   <body>
@@ -31,7 +32,7 @@
             <hr>
 
             <div>
-              <h2 class = "tag_line">Original cinnamon roll</h2>
+              <h2 class = "tag_line">Our handmade cinnamon roll</h2>
             </div>
           </div>
         </div>
@@ -64,11 +65,8 @@
           <!-- Glazing options -->
           <div>
             <p>Glazing:</p>
-            <select class = dropdown>
-              <option value = "original">Keep original</option>
-              <option value = "sugar_milk">Sugar milk</option>
-              <option value = "vanilla_milk">Vanilla milk</option>
-              <option value = "chocolate">Double chocolate</option>
+            <select id = "glazeSelect" onchange = "glazingChange(this)">
+
             </select>
             <br>
           </div>
@@ -76,17 +74,14 @@
           <!-- Pack size options -->
           <div>
             <p>Pack size:</p>
-            <select class = "dropdown">
-              <option value = "one">1</option>
-              <option value = "three">3</option>
-              <option value = "six">6</option>
-              <option value = "twelve">12</option>
+            <select id = "packSelect" onchange = "packChange(this)">
+
             </select>
           </div>
 
           <!-- Total price & Add to Cart button -->
           <div class = "purchase">
-            <p class = "price">$2.49</p>
+            <p id = "price">$2.49</p>
             <button>Add to Cart</button>
           </div>
 
