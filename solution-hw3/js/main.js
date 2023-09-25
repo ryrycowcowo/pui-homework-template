@@ -1,11 +1,5 @@
-/* 
-      Populate options of your dropdown fields with defined objects:
-            Loops
-            Price adaptation as option value
-            Option name to be displayed
-*/
-
-//array definitions for glazing and pack options
+//--ARRAYS--
+//definitions for glazing and pack options
 let glazingOptions = [
       "Keep original",
       "Sugar milk",
@@ -52,9 +46,9 @@ for (let x = 0; x < glazingOptions.length; x++) {
       glazingDropdown.appendChild(options);
 }
 
-//This selects the glazing dropdown & manipulates the value accordingly
+//selects the glazing dropdown & manipulates the value accordingly
 function glazingChange(selection) {
-      Product.glazePrice = parseFloat(selection.value);
+      Product.glazePrice = parseFloat(selection.value); //parses selection value to float type
       calculatePrice();
 }
 
@@ -71,18 +65,19 @@ for (let x = 0; x < packOptions.length; x++) {
       packDropdown.appendChild(options);
 }
 
-//This selects the pack dropdown & manipulates the value accordingly
+//selects the pack dropdown & manipulates the value accordingly
 function packChange(selection) {
-      Product.packPrice = parseInt(selection.value);
+      Product.packPrice = parseInt(selection.value); //parses selection value to integer type
       calculatePrice();
 }
 
-let total = document.getElementById("price");
 
 //--TOTAL--
 //calculates total price
+let total = document.getElementById("price");
+
 function calculatePrice() {
       let price = (Product.basePrice + Product.glazePrice) * Product.packPrice;
-      total.textContent = "$" + String(price.toFixed(2));
+      total.textContent = "$" + String(price.toFixed(2)); //limits total value to 2 decimal places
 }
 
