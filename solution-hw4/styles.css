@@ -1,0 +1,199 @@
+/* Sets logo to 400px */
+#logo {
+    flex-grow: 0;
+    width: 400px;
+}
+
+/* Bolds horizontal line & adds margins below */
+hr {
+    border: 2px solid black;
+    margin-bottom: 16px;
+}
+
+/* Sets font for all text within body */
+body {
+    font-family: 'PT Sans', 'Arial', 'Helvetica', 'San Serif';
+    font-size: 22px;
+    width: 100%;
+}
+
+/* Styles navigation menu titles and highlights active page */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+.nav_menu {
+    margin-right: 60px;
+    margin-top: 30px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.active_page {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Styles h2 & centers elements */
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+.center {
+    justify-content: center;
+    margin: 10px;
+}
+
+/* -----Index page----- */
+/* Defines rows and columns */
+.row {
+    display: flex;
+}
+.header_column {
+    flex-grow: 1;
+    padding-left: 30px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+#tag_line {
+    margin-top: 60px;
+}
+
+/* Styles cinnamon roll item boxes & adds hover interactions */
+.item, .config {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    width: 310px;
+}
+.item:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+.unbold {
+    font-weight: normal;
+}
+
+/* Styles gallery item images */
+.gallery_image {
+    border: 2px solid black;
+    margin: 10px;
+    width: 285px;
+}
+
+/* Styles item name and price */
+.item_info {
+    margin-left: 8px;
+}
+.item_name {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+.item_price {
+    margin-top: 0px;
+}
+
+/* -----Product Detail page----- */
+/* Styles product detail image */
+.detail_image {
+    border: 2px solid black;
+    width: 600px;
+}
+
+/* Left-aligns item description and dropdown menu name */
+.item_description {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-align: left;
+    width: 280px;
+}
+
+/* Styles dropdown menus */
+#glazeSelect, #packSelect {
+    border: 2px solid black;
+    display: inline-block;
+    font-family: 'PT Sans', 'Arial', 'Helvetica', 'San Serif';
+    font-size: 22px;
+    text-align: left;
+
+    width: 250px;
+    height: 40px;
+}
+
+.purchase {
+    margin-top: 100px;
+}
+/* Styles price in Product Detail page */
+#price {
+    display: inline-block;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Styles both Add to Cart and Checkout buttons */
+button {
+    background-color: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    font-family: 'PT Sans';
+    font-size: 22px;
+    font-weight: bold;
+    padding: 6px 28px;
+    text-align: center;
+}
+
+/* -----Cart page----- */
+/* Styles cart items and Remove option in Cart page */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 360px;
+}
+.cart_item {
+    align-items: center;
+    text-align: center;
+    width: 700px;
+}
+.cart_item_image {
+    border: 2px solid black;
+    width: 200px;
+}
+.cart_item_info {
+    margin-left: 40px;
+    text-align: left;
+    width: 350px;
+}
+.cart_item_price {
+    margin-left: 40px;
+    text-align: right;
+}
+.remove {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+    text-decoration: underline;
+}
+.cart_purchase {
+    gap: 275px;
+    justify-content: flex-end;
+    text-align: right;
+    width: 700px;
+}
+.checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    margin-top: 30px;
+    width: 700px;
+}

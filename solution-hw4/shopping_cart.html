@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Shopping Cart</title>
+  </head>
+    
+  <body>
+
+    <main>
+
+      <!-- Header: includes logo and navigation menu titles -->
+      <header>
+        <div class = row>
+          <a href = "./index.html"> 
+            <img id = "logo" src = "../assets/logo/logo-01.svg" alt = "Logo"/>
+          </a>
+
+          <div class = header_column>
+            <nav class = "navigation">
+              <p class = "nav_menu">
+                <a href = "./index.html">Products</a>
+              </p>
+              <p class = "nav_menu">
+                <a class = "active_page" href = "./shopping_cart.html">Cart</a>
+              </p>
+            </nav>
+
+            <hr>
+
+            <div>
+              <h2 class = "tag_line">Shopping cart</h2>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+      </header>
+
+      <!-- Section: includes cart items & Checkout button -->
+      <div class = "content">
+
+        <!-- Original Cinnamon Roll item -->
+        <div>
+          <div class = "cart_item row">
+            <img class = "cart_item_image" src = "../assets/products/original-cinnamon-roll.jpg" alt = "Original Cinnamon Roll"/>
+          
+            <p class = "cart_item_info">
+              Original Cinnamon Roll
+              <br>
+              Glazing: Keep original
+              <br>
+              Pack Size: 1
+              <br><br>
+            </p>
+
+            <h2 class = "cart_item_price">$2.49</h2>
+          </div>
+
+          <p class = "remove">Remove</p>
+        </div>
+      
+        <!-- Double-chocolate Cinnamon Roll item -->
+        <div>
+          <div class = "cart_item row">
+            <img class = "cart_item_image" src = "../assets/products/double-chocolate-cinnamon-roll.jpg" alt = "Double Chocolate Cinnamon Roll"/>
+
+            <p class = "cart_item_info">
+              Double Chocolate Cinnamon Roll
+              <br>
+              Glazing: Sugar milk
+              <br>
+              Pack Size: 6
+              <br><br>
+            </p>
+
+            <h2 class = "cart_item_price">$27.45</h2>
+          </div>
+          
+          <p class = "remove">Remove</p>
+        </div>
+
+        <!-- Total price & Checkout button -->
+        <div>
+          <hr>
+          <div class = "cart_purchase row">
+            <h2>Total</h2>
+            <h2 class = "cart_item_price">$29.94</h2>
+          </div>
+
+          <div class = "checkout">
+            <button>Checkout</button>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+
+</html>
