@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Product Details</title>
+    <script type = "text/javascript" defer src = "js/rollsData.js"></script>
+    <script type = "text/javascript" defer src = "js/main.js"></script>
+  </head>
+  
+  <body>
+
+    <main>
+
+      <!-- Header: includes logo and navigation menu titles -->
+      <header>
+        <div class = row>
+          <a href = "./index.html"> 
+            <img id = "logo" src = "../assets/logo/logo-01.svg" alt = "Logo"/>
+          </a>
+
+          <div class = header_column>
+            <nav class = "navigation">
+              <p class = "nav_menu">
+                <a class = "active_page" href = "./index.html">Products</a>
+              </p>
+              <p class = "nav_menu">
+                <a href = "./shopping_cart.html">Cart</a>
+              </p>
+            </nav>
+
+            <hr>
+
+            <div>
+              <h2 class = "tag_line">Our handmade cinnamon roll</h2>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+      </header>
+    
+      <!-- Section: includes item image, dropdown menus, and Add to Cart button -->
+      <div class = "row center">
+
+        <!-- Item image -->
+        <div class = "column center">
+          <img class = "detail_image" src = "../assets/products/original-cinnamon-roll.jpg" alt = "Original Cinnamon Roll"/>
+        </div>
+
+        <!-- Item description -->
+        <div class = "column">
+
+          <!-- Item description -->
+          <div>
+            <p class = "item_description">
+              Customize our delicious,
+              <br>
+              hand-made cinammon roll to 
+              <br>
+              your liking!
+            </p>
+          </div>
+        
+          <!-- Glazing dropdown options -->
+          <div>
+            <p>Glazing:</p>
+            <select id = "glazeSelect" onchange = "glazingChange(this)">
+
+            </select>
+            <br>
+          </div>
+
+          <!-- Pack size dropdown options -->
+          <div>
+            <p>Pack size:</p>
+            <select id = "packSelect" onchange = "packChange(this)">
+
+            </select>
+          </div>
+
+          <!-- Total price & Add to Cart button -->
+          <div class = "purchase">
+            <p id = "price"> $2.49 </p>
+            <button onclick = "addToCart()"> Add to Cart </button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+
+</html>
