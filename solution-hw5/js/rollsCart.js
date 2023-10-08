@@ -14,7 +14,7 @@ const packOptions = {
 }
 
 
-//--ADDING ROLLS, CREATING & UPDATING ELEMENTS, DELETING ROLLS--
+//--CLASS & OBJECTS--
 //Roll class
 class Roll {
       constructor (rollType, rollGlazing, packSize, basePrice) {
@@ -25,7 +25,7 @@ class Roll {
       }
 }
 
-//Roll objects
+//creates Roll objects
 const roll1 = new Roll("Original", "Sugar Milk", "1", 2.49);
 const roll2 = new Roll("Walnut", "Vanilla Milk", "12", 3.49);
 const roll3 = new Roll("Raisin", "Sugar Milk", "3", 2.99);
@@ -40,11 +40,11 @@ rollCart.add(roll2);
 rollCart.add(roll3);
 rollCart.add(roll4);
 
-//console.log(rollCart);
 
-//loops Roll objects in rollCart to calculate total price
+//--CALCULATING ROLL ITEM AND TOTAL--
+//calculates price for each roll item with glazing and pack options
 for (const r of rollCart) {
-      //calculates price for each roll item
+      
       r.calculatedPrice = (r.basePrice + glazingOptions[r.glazing]) * packOptions[r.size];
       
       //creates element
@@ -54,6 +54,7 @@ for (const r of rollCart) {
       calculateTotal();
 }
 
+//calculates total price
 function calculateTotal() {
       let total = 0;
 
@@ -66,6 +67,8 @@ function calculateTotal() {
       rollTotalPriceElement.innerText = '$' + String(total.toFixed(2));
 }
 
+
+//--CREATING & UPDATING ELEMENTS, DELETING ROLLS--
 function updateElement(roll) {
       //roll image
       const rollImageElement = roll.element.querySelector('.rollImage');
@@ -103,7 +106,7 @@ function createElement(roll) {
             deleteRoll(roll);
       });
       
-      //adds notecard clone to the DOM
+      //adds rollList clone to the DOM
       const rollListElement = document.querySelector('.rollList');
       rollListElement.prepend(roll.element);
       

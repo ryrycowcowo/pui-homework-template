@@ -37,6 +37,7 @@ let packOptions = [
       },
 ]
 
+
 //--GLAZING--
 //populates glazing dropdown
 const glazingDropdown = document.getElementById("glazeSelect");
