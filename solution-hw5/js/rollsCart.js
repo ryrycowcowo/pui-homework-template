@@ -1,5 +1,5 @@
 //--ARRAYS--
-//definitions for glazing and pack options with use of objects
+//definitions for glazing and pack options with use of object literals
 const glazingOptions = {
       "Keep Original": 0,
       "Sugar Milk": 0,
@@ -31,7 +31,7 @@ const roll2 = new Roll("Walnut", "Vanilla Milk", "12", 3.49);
 const roll3 = new Roll("Raisin", "Sugar Milk", "3", 2.99);
 const roll4 = new Roll("Apple", "Keep Original", "3", 3.49);
 
-//creates empty array
+//creates empty Set
 const rollCart = new Set();
 
 //adds Roll objects to rollCart array
@@ -68,7 +68,7 @@ function calculateTotal() {
 }
 
 
-//--CREATING & UPDATING ELEMENTS, DELETING ROLLS--
+//--UPDATING & CREATING ELEMENTS, DELETING ROLLS--
 function updateElement(roll) {
       //roll image
       const rollImageElement = roll.element.querySelector('.rollImage');
@@ -101,7 +101,6 @@ function createElement(roll) {
 
       //creates and adds function to Remove button
       const remove = roll.element.querySelector('.remove');
-      console.log(remove);
       remove.addEventListener('click', () => {
             deleteRoll(roll);
       });
