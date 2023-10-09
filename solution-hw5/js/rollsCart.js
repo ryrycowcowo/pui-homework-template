@@ -1,4 +1,4 @@
-//--ARRAYS--
+//--CLASSES & OBJECTS--
 //definitions for glazing and pack options with use of object literals
 const glazingOptions = {
       "Keep Original": 0,
@@ -13,8 +13,6 @@ const packOptions = {
       "12": 10,
 }
 
-
-//--CLASS & OBJECTS--
 //Roll class
 class Roll {
       constructor (rollType, rollGlazing, packSize, basePrice) {
