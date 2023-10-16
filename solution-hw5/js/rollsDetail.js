@@ -86,7 +86,7 @@ function calculatePrice() {
 
 //--ADD TO CART--
 //cart array
-let cart = []
+let cart = [];
 
 //parses URL parameter
 const queryString = window.location.search; //getting query string from URL

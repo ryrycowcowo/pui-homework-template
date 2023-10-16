@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Shopping Cart</title>
+    <script defer src = "js/rollsData.js" type = "text/javascript"></script>
+    <script defer src = "js/rollsCart.js" type = "text/javascript"></script>
+  </head>
+    
+  <body>
+
+    <main>
+
+      <!-- Header: includes logo and navigation menu titles -->
+      <header>
+        <div class = row>
+          <a href = "./index.html"> 
+            <img id = "logo" src = "../assets/logo/logo-01.svg" alt = "Logo"/>
+          </a>
+
+          <div class = header_column>
+            <nav class = "navigation">
+              <p class = "nav_menu">
+                <a href = "./index.html">Products</a>
+              </p>
+              <p class = "nav_menu">
+                <a class = "active_page" href = "./shopping_cart.html">Cart</a>
+              </p>
+            </nav>
+
+            <hr>
+
+            <div>
+              <h2 class = "tag_line">Shopping cart</h2>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+      </header>
+
+      <!-- Section: includes cart items & Checkout button -->
+      <div class = "rollList content">
+
+        <div id="cart-item-list">
+          <template id = "rollTemplate">
+          
+            <!-- Original Cinnamon Roll item -->
+            <div class = "rollCard">
+              <div class = "cart_item row">
+                <img class = "rollImage" src = "../assets/products/original-cinnamon-roll.jpg" alt = "Original Cinnamon Roll"/>
+          
+                <div class = "rollDetails">
+                  <p class = "rollName">Original Cinnamon Roll</p>
+                  <p class = "rollGlazing">Glazing: Keep original</p>
+                  <p class = "rollPack">Pack Size: 1</p>
+                  <br>
+                </div>
+                <h2 class = "rollCalculatedPrice">$2.49</h2>
+              </div>
+              <p class = "remove">Remove</p>
+            </div>
+          </template>
+        </div>
+
+        <!-- Total price & Checkout button -->
+        <div class = "rollCard">
+          <hr>
+          <div class = "cart_purchase row">
+            <h2>Total</h2>
+            <h2 class = "rollTotalPrice">$29.94</h2>
+          </div>
+
+          <div class = "checkout">
+            <button>Checkout</button>
+          </div>
+        </div>
+
+        
+      </div>
+
+    </main>
+
+  </body>
+
+</html>
