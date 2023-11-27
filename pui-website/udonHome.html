@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang = "en">
+
   <head>
     <meta charset = "UTF-8">
-    <!-- <link rel="stylesheet" href="globals.css" /> -->
-    <link rel="stylesheet" href="udonStyle.css" />
+    <link rel = "stylesheet" href = "udonStyle.css" />
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Itim&display=swap" rel = "stylesheet"> 
     <title>Udon Home</title>
   </head>
+
   <body>
-    <div class="prototype">
-      <div class="div">
-        <div class="heading">
-          <div class="text-wrapper">udon</div>
-          <div class="frame">
-            <div class="text-wrapper-2">Recipes</div>
-            <div class="text-wrapper-2">About</div>
+    <main class = "prototype">
+      <div class = "background">
+
+        <!-- Heading -->
+        <header class = "heading">
+          <nav>
+            <a class = "title" href = "./udonHome.html">udon</a>
+            <div class = "frame">
+              <h1 class = "menu">Recipes</h1>
+              <h1 class = "menu">About</h1>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Interactive Splash -->
+        <div class = "splash">
+          
+          <div class = "frame-2">
+            <div class = "text-wrapper-5">Broth</div>
+            <div class = "div-wrapper"><div class = "text-wrapper-5">Sauce</div></div>
+          </div>
+
+          <p class = "splashMessage">WHERE TRADITION MEETS FLAVOR: UDON MARVELS AWAIT YOU</p>
+          <img class = "kitsune" src = "../assets/udonImages/broth/kitsune.png"/>
+
+          <div class = "frame-3">
+            <div class = "dish-types">DISH TYPES:</div>
+            <div class = "brothSelection">
+              <img class = "kake" src = "../assets/udonImages/broth/kake.png"/>
+              <img class = "kitsune" src = "../assets/udonImages/broth/kitsune.png"/>
+              <img class = "nabeyaki" src = "../assets/udonImages/broth/nabeyaki.png"/>
+              <img class = "sukiyaki" src = "../assets/udonImages/broth/sukiyaki.png"/>
+              <img class = "tantan" src = "../assets/udonImages/broth/tantan.png"/>
+              <img class = "tonkatsu" src = "../assets/udonImages/broth/tonkatsu.png"/>
+            </div>
           </div>
         </div>
-        <div class="overlap-group">
-          <p class="where-tradition">WHERE TRADITION MEETS FLAVOR: UDON MARVELS AWAIT YOU</p>
-          <img class="image" src="img/image-1.png" />
-        </div>
-        <div class="overlap">
-          <div class="group">
-            <p class="p">
+
+        <!-- What Are They -->
+        <div class = "what">
+          <div class = "group">
+            <div class = "sectionTitle">WHAT ARE THEY?</div>
+            <p class = "description">
               Udon are chewy Japanese noodles made from wheat flour, water, and salt, typically served as a noodle soup
-              in a hot dashi-based broth, but they can also be served cold, with a dipping sauce . They’re thicker than
-              buckwheat soba noodles—typically 2-4 mm—and can be either flat or rounded.
+              in a hot dashi-based broth, but they can also be served cold, with a dipping sauce. They’re thicker than
+              buckwheat soba noodles, typically 2-4 mm, and can be either flat or rounded.
             </p>
-            <div class="text-wrapper-3">WHAT ARE THEY?</div>
+            
           </div>
-          <img class="img" src="img/image-2.png" />
+          <img class = "sanuki" src = "../assets/udonImages/others/sanuki.png"/>
         </div>
-        <div class="group-2">
-          <p class="text-wrapper-4">
+
+        <!-- How To Eat It -->
+        <div class = "how">
+          <div class = "sectionTitle">HOW TO EAT IT</div>
+          <p class = "description">
+            When eating udon, it's common to use chopsticks to lift the noodles. It's also acceptable to make
+            noise (via slurping) while eating in Japanese culture, as it's believed to enhance the flavors and cool
+            down the hot noodles.
+          </p>
+        </div>
+
+        <!-- History -->
+        <div class = "history">
+          <div class = "sectionTitle1">HISTORY</div>
+          <p class = "description1">
             The earliest iteration of udon noodles likely originated in China and was introduced to Japan during the
             Tang dynasty (618–907 CE). Legend says Kukai, a monk from Kagawa, who went to China as a research scholar
             transported udon back to Japan. The original udon may have been closer to a dumpling (flattened round dough)
@@ -41,48 +85,29 @@
             specialty stalls after the popularity of commercial in the seventeenth century. Today, udon is eaten
             throughout Japan but especially in the south, from Osaka to Kyushu.
           </p>
-          <div class="text-wrapper-3">HISTORY</div>
         </div>
-        <div class="group-3">
-          <p class="text-wrapper-4">
+
+        <!-- Regional Udon Noodles Type -->
+        <div class = "sectionTitle1">
+          <div class = "sectionTitle1">REGIONAL UDON NOODLES TYPE</div>
+          <p class = "description1">
             Most people are already familiar with the thick and square-shaped sanuki udon as it’s the “default” udon
             served in Japanese restaurants. However, udon exists in a wide variety of forms and shapes, and many regions
             in Japan have their own spin on things. Here are 5 regional types of udon that are especially popular.
           </p>
-          <div class="text-wrapper-3">REGIONAL UDON NOODLES TYPE</div>
         </div>
-        <div class="group-4">
-          <p class="p">
-            When eating udon, it&#39;s common to use chopsticks to lift the noodles. It&#39;s also acceptable to make
-            noise (via slurping) while eating in Japanese culture, as it&#39;s believed to enhance the flavors and cool
-            down the hot noodles.
-          </p>
-          <div class="text-wrapper-3">HOW TO EAT IT</div>
+
+        <div class = "overlap-2">
+          <div class = "ellipse"></div>
+          <div class = "ellipse-2"></div>
+          <div class = "ellipse-3"></div>
+          <div class = "ellipse-4"></div>
+          <div class = "ellipse-5"></div>
+          <div class = "ellipse-6"></div>
         </div>
-        <div class="overlap-2">
-          <div class="ellipse"></div>
-          <div class="ellipse-2"></div>
-          <div class="ellipse-3"></div>
-          <div class="ellipse-4"></div>
-          <div class="ellipse-5"></div>
-          <div class="ellipse-6"></div>
-        </div>
-        <img class="image-2" src="img/image.png" />
-        <div class="frame-2">
-          <div class="text-wrapper-5">Cold</div>
-          <div class="div-wrapper"><div class="text-wrapper-5">Hot</div></div>
-        </div>
-        <div class="frame-3">
-          <div class="dish-types">DISH TYPES:</div>
-          <div class="frame-4">
-            <img class="image-3" src="img/image-4.png" />
-            <img class="image-4" src="img/image-3.png" />
-            <img class="image-5" src="img/image-5.png" />
-            <img class="image-5" src="img/image-6.png" />
-            <img class="image-5" src="img/image-7.png" />
-          </div>
-        </div>
+        <img class = "map" src = "../assets/udonImages/others/japanmap.png"/>
+        
       </div>
-    </div>
+    </main>
   </body>
 </html>

@@ -6,15 +6,15 @@
       width: 100%;
     }
     
-    .prototype .div {
-      background-image: url(./img/rectangle-1.png);
+    .background {
+      background-image: url(../assets/udonImages/others/wood.jpg);
       background-size: 100% 100%;
       width: 1512px;
       height: 5200px;
       position: relative;
     }
     
-    .prototype .heading {
+    .heading {
       display: inline-flex;
       align-items: center;
       gap: 806px;
@@ -23,11 +23,11 @@
       left: 100px;
     }
     
-    .prototype .text-wrapper {
+    .title {
       position: relative;
       width: fit-content;
       margin-top: -1px;
-      font-family: "Itim-Regular", Helvetica;
+      font-family: 'Itim', cursive;
       font-weight: 400;
       color: #ffffff;
       font-size: 96px;
@@ -36,7 +36,7 @@
       white-space: nowrap;
     }
     
-    .prototype .frame {
+    .frame {
       display: inline-flex;
       align-items: flex-start;
       gap: 50px;
@@ -44,7 +44,7 @@
       flex: 0 0 auto;
     }
     
-    .prototype .text-wrapper-2 {
+    .menu {
       position: relative;
       width: fit-content;
       margin-top: -1px;
@@ -56,7 +56,7 @@
       line-height: normal;
     }
     
-    .prototype .overlap-group {
+    .splash {
       position: absolute;
       width: 1315px;
       height: 750px;
@@ -64,7 +64,7 @@
       left: 100px;
     }
     
-    .prototype .where-tradition {
+    .splashMessage {
       position: absolute;
       width: 700px;
       top: 74px;
@@ -78,15 +78,16 @@
       line-height: 150px;
     }
     
-    .prototype .image {
+    .kitsune {
       position: absolute;
       width: 750px;
       height: 750px;
       top: 0;
       left: 565px;
+      z-index: 1;
     }
     
-    .prototype .overlap {
+    .what {
       position: absolute;
       width: 1160px;
       height: 751px;
@@ -94,7 +95,7 @@
       left: 0;
     }
     
-    .prototype .group {
+    .group {
       position: absolute;
       width: 804px;
       height: 373px;
@@ -102,7 +103,7 @@
       left: 356px;
     }
     
-    .prototype .p {
+    .description {
       position: absolute;
       width: 800px;
       top: 98px;
@@ -115,7 +116,7 @@
       line-height: normal;
     }
     
-    .prototype .text-wrapper-3 {
+    .sectionTitle {
       position: absolute;
       width: 800px;
       top: 0;
@@ -128,7 +129,7 @@
       line-height: normal;
     }
     
-    .prototype .img {
+    .img {
       position: absolute;
       width: 747px;
       height: 405px;
@@ -136,7 +137,7 @@
       left: 0;
     }
     
-    .prototype .group-2 {
+    .history {
       position: absolute;
       width: 1316px;
       height: 538px;
@@ -144,7 +145,7 @@
       left: 100px;
     }
     
-    .prototype .text-wrapper-4 {
+    .description1 {
       position: absolute;
       width: 1312px;
       top: 98px;
@@ -157,7 +158,7 @@
       line-height: normal;
     }
     
-    .prototype .group-3 {
+    .sectionTitle1 {
       position: absolute;
       width: 1316px;
       height: 318px;
@@ -165,7 +166,7 @@
       left: 100px;
     }
     
-    .prototype .group-4 {
+    .how {
       position: absolute;
       width: 804px;
       height: 318px;
@@ -173,7 +174,7 @@
       left: 100px;
     }
     
-    .prototype .overlap-2 {
+    .overlap-2 {
       position: absolute;
       width: 900px;
       height: 1206px;
@@ -184,7 +185,7 @@
       background-position: 50% 50%;
     }
     
-    .prototype .ellipse {
+    .ellipse {
       height: 50px;
       top: 711px;
       left: 515px;
@@ -195,7 +196,7 @@
       box-shadow: 0px 0px 100px 10px #000000;
     }
     
-    .prototype .ellipse-2 {
+    .ellipse-2 {
       height: 43px;
       top: 388px;
       left: 540px;
@@ -206,7 +207,7 @@
       box-shadow: 0px 0px 100px 10px #000000;
     }
     
-    .prototype .ellipse-3 {
+    .ellipse-3 {
       height: 50px;
       top: 812px;
       left: 340px;
@@ -217,7 +218,7 @@
       box-shadow: 0px 0px 100px 10px #000000;
     }
     
-    .prototype .ellipse-4 {
+    .ellipse-4 {
       height: 50px;
       top: 882px;
       left: 228px;
@@ -228,7 +229,7 @@
       box-shadow: 0px 0px 100px 10px #000000;
     }
     
-    .prototype .ellipse-5 {
+    .ellipse-5 {
       height: 50px;
       top: 988px;
       left: 106px;
@@ -239,7 +240,7 @@
       box-shadow: 0px 0px 100px 10px #000000;
     }
     
-    .prototype .ellipse-6 {
+    .ellipse-6 {
       height: 50px;
       top: 902px;
       left: 89px;
@@ -250,7 +251,7 @@
       box-shadow: 0px 0px 100px 10px #000000;
     }
     
-    .prototype .image-2 {
+    .map {
       position: absolute;
       width: 525px;
       height: 281px;
@@ -258,7 +259,7 @@
       left: 987px;
     }
     
-    .prototype .frame-2 {
+    .frame-2 {
       display: inline-flex;
       align-items: center;
       gap: 40px;
@@ -270,7 +271,7 @@
       border-radius: 80px;
     }
     
-    .prototype .text-wrapper-5 {
+    .text-wrapper-5 {
       position: relative;
       width: fit-content;
       margin-top: -1px;
@@ -283,7 +284,7 @@
       line-height: normal;
     }
     
-    .prototype .div-wrapper {
+    .div-wrapper {
       display: inline-flex;
       flex-direction: column;
       align-items: center;
@@ -296,7 +297,7 @@
       box-shadow: 0px 4px 50px #000000;
     }
     
-    .prototype .frame-3 {
+    .frame-3 {
       display: inline-flex;
       align-items: center;
       gap: 60px;
@@ -305,7 +306,7 @@
       left: 100px;
     }
     
-    .prototype .dish-types {
+    .dish-types {
       position: relative;
       width: fit-content;
       font-family: "Khand-Medium", Helvetica;
@@ -316,7 +317,7 @@
       line-height: normal;
     }
     
-    .prototype .frame-4 {
+    .brothSelection {
       display: inline-flex;
       align-items: flex-start;
       gap: 75px;
@@ -324,13 +325,13 @@
       flex: 0 0 auto;
     }
     
-    .prototype .image-3 {
+    .image-3 {
       position: relative;
       width: 120px;
       height: 120px;
     }
     
-    .prototype .image-4 {
+    .image-4 {
       position: relative;
       width: 240px;
       height: 240px;
@@ -338,7 +339,7 @@
       margin-bottom: -60px;
     }
     
-    .prototype .image-5 {
+    .image-5 {
       position: relative;
       width: 120px;
       height: 120px;
