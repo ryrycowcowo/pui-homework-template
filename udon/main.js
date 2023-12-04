@@ -1,7 +1,4 @@
-
-// const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-// const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-
+// Scroll Reveal Animation
 let reveal = {
       distance: "100%",
       duration: "1000", // in milliseconds
