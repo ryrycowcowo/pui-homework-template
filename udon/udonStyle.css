@@ -90,9 +90,22 @@
   width: 650px;
   height: 650px;
   z-index: 1;
+
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 /* Second Part */
-.frame-3 {
+.selection {
   position: relative;
   display: flex;
   align-items: center;
@@ -113,7 +126,7 @@
   font-size: 48px;
   color: white;
 }
-.brothSelection {
+.broth {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -121,11 +134,17 @@
   flex-wrap: wrap;
 
   gap: 60px;
+  
 }
 .kake, .kitsune1, .nabeyaki, .sukiyaki, .tantan, .tonkatsu {
   width: 100px;
   height: 100px;
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
 }
+
 
 /* What Is Udon */
 .what {
@@ -180,7 +199,20 @@
   object-fit: scale-down;
   object-position: left;
   z-index: 1;
+
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
 }
+  .sanuki:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+  }
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
 
 /* How To Eat It */
 .how {
@@ -247,7 +279,7 @@
   background-color: white;
   border: none;
   border-radius: 50%;
-  color: white;
+  color: whitesmoke;
   height: 20px;
   padding: 20px;
   text-align: center;

@@ -1,6 +1,19 @@
+
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
+let reveal = {
+      distance: "100%",
+      duration: "1000", // in milliseconds
+      ease: "ease-out",
+      opacity: "0"
+};
+
+ScrollReveal().reveal(".reveal", reveal);
+
+
+
+// Swiper
 // // import Swiper bundle with all modules installed
 // import Swiper from 'swiper/bundle';
 
@@ -10,6 +23,9 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 // // init Swiper:
 // const swiper = new Swiper();
 
+//------------------------------------------------------//
+
+// Nanogallery
 // function Demo_Justified() {
 //       jQuery("#nanogallery").nanogallery2({
 
