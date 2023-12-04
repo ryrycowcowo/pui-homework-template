@@ -3,20 +3,34 @@
 
   <head>
     <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = "udonStyle.css" />
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin = "anonymous">
+    
+    <!-- Font Families -->
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https://fonts.googleapis.com/css2?family=Itim&display=swap" rel = "stylesheet"> 
+    <link href = "https://fonts.googleapis.com/css2?family=Itim&display=swap" rel = "stylesheet">
+    
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Itim&family=Khand&display=swap" rel = "stylesheet">
+
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Jost&display=swap" rel = "stylesheet">
+    
     <title>Udon Home</title>
+    <script type = "text/javascript" defer src = "js/main.js"></script>
   </head>
 
   <body>
     <main class = "prototype">
       <div class = "background">
 
-        <!-- Heading -->
-        <header class = "heading">
-          <nav>
+        <!-- Navigation Menu -->
+        <header>
+          <nav class = "nav">
             <a class = "title" href = "./udonHome.html">udon</a>
             <div class = "frame">
               <h1 class = "menu">Recipes</h1>
@@ -28,19 +42,21 @@
         <!-- Interactive Splash -->
         <div class = "splash">
           
-          <div class = "frame-2">
-            <div class = "text-wrapper-5">Broth</div>
-            <div class = "div-wrapper"><div class = "text-wrapper-5">Sauce</div></div>
-          </div>
+          <!-- <div class = "toggle">
+            <div class = "broth">Broth</div>
+            <div class = "sauce">Sauce</div>
+          </div> -->
 
-          <p class = "splashMessage">WHERE TRADITION MEETS FLAVOR: UDON MARVELS AWAIT YOU</p>
-          <img class = "kitsune" src = "../assets/udonImages/broth/kitsune.png"/>
+          <div class = center>
+            <p class = "splashMessage">WHERE TRADITION MEETS FLAVOR: UDON MARVELS AWAIT YOU</p>
+            <img class = "kitsune" src = "../assets/udonImages/broth/kitsune.png"/>
+          </div>
 
           <div class = "frame-3">
             <div class = "dish-types">DISH TYPES:</div>
             <div class = "brothSelection">
               <img class = "kake" src = "../assets/udonImages/broth/kake.png"/>
-              <img class = "kitsune" src = "../assets/udonImages/broth/kitsune.png"/>
+              <img class = "kitsune1" src = "../assets/udonImages/broth/kitsune.png"/>
               <img class = "nabeyaki" src = "../assets/udonImages/broth/nabeyaki.png"/>
               <img class = "sukiyaki" src = "../assets/udonImages/broth/sukiyaki.png"/>
               <img class = "tantan" src = "../assets/udonImages/broth/tantan.png"/>
@@ -49,34 +65,42 @@
           </div>
         </div>
 
-        <!-- What Are They -->
+        <!-- What Is Udon -->
         <div class = "what">
           <div class = "group">
-            <div class = "sectionTitle">WHAT ARE THEY?</div>
+            <div class = "sectionTitle">WHAT IS UDON?</div>
             <p class = "description">
               Udon are chewy Japanese noodles made from wheat flour, water, and salt, typically served as a noodle soup
               in a hot dashi-based broth, but they can also be served cold, with a dipping sauce. They’re thicker than
               buckwheat soba noodles, typically 2-4 mm, and can be either flat or rounded.
             </p>
-            
           </div>
-          <img class = "sanuki" src = "../assets/udonImages/others/sanuki.png"/>
+
+          <div>
+            <img class = "sanuki" src = "../assets/udonImages/others/sanuki.png"/>
+          </div>
         </div>
 
         <!-- How To Eat It -->
         <div class = "how">
-          <div class = "sectionTitle">HOW TO EAT IT</div>
-          <p class = "description">
-            When eating udon, it's common to use chopsticks to lift the noodles. It's also acceptable to make
-            noise (via slurping) while eating in Japanese culture, as it's believed to enhance the flavors and cool
-            down the hot noodles.
-          </p>
+          <div class = "group">
+            <div class = "sectionTitle">HOW TO EAT IT</div>
+            <p class = "description">
+              When eating udon, it's common to use chopsticks to lift the noodles. It's also acceptable to make
+              noise (via slurping) while eating in Japanese culture, as it's believed to enhance the flavors and cool
+              down the hot noodles.
+            </p>
+          </div>
+
+          <div>
+            <img class = "chopsticks" src = "../assets/udonImages/others/chopsticks.png"/>
+          </div>
         </div>
 
         <!-- History -->
         <div class = "history">
-          <div class = "sectionTitle1">HISTORY</div>
-          <p class = "description1">
+          <div class = "sectionTitle">HISTORY</div>
+          <p class = "description">
             The earliest iteration of udon noodles likely originated in China and was introduced to Japan during the
             Tang dynasty (618–907 CE). Legend says Kukai, a monk from Kagawa, who went to China as a research scholar
             transported udon back to Japan. The original udon may have been closer to a dumpling (flattened round dough)
@@ -88,26 +112,34 @@
         </div>
 
         <!-- Regional Udon Noodles Type -->
-        <div class = "sectionTitle1">
-          <div class = "sectionTitle1">REGIONAL UDON NOODLES TYPE</div>
-          <p class = "description1">
-            Most people are already familiar with the thick and square-shaped sanuki udon as it’s the “default” udon
-            served in Japanese restaurants. However, udon exists in a wide variety of forms and shapes, and many regions
-            in Japan have their own spin on things. Here are 5 regional types of udon that are especially popular.
-          </p>
-        </div>
-
-        <div class = "overlap-2">
-          <div class = "ellipse"></div>
-          <div class = "ellipse-2"></div>
-          <div class = "ellipse-3"></div>
-          <div class = "ellipse-4"></div>
-          <div class = "ellipse-5"></div>
-          <div class = "ellipse-6"></div>
-        </div>
-        <img class = "map" src = "../assets/udonImages/others/japanmap.png"/>
-        
+        <div class = "regional">
+          <div class = "group"> 
+            <div class = "sectionTitle">REGIONAL UDON NOODLES TYPE</div>
+            <p class = "description">
+              Most people are already familiar with the thick and square-shaped sanuki udon as it’s the “default” udon
+              served in Japanese restaurants. However, udon exists in a wide variety of forms and shapes, and many regions
+              in Japan have their own spin on things. Here are 5 regional types of udon that are especially popular.
+            </p>
+          </div>
+          
+          <!-- Map -->
+          <div class = "map">
+            <div class = "dots">
+              <div class = "ellipse"></div>
+              <div class = "ellipse-2"></div>
+              <div class = "ellipse-3"></div>
+              <div class = "ellipse-4"></div>
+              <div class = "ellipse-5"></div>
+              <div class = "ellipse-6"></div>
+            </div>
+            <div>
+              <img class = "mapImg" src = "../assets/udonImages/others/japanmap.png"/>
+            </div>
+          </div>
+        </div>        
       </div>
     </main>
+
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin = "anonymous"></script>
   </body>
 </html>
