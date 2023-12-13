@@ -36,5 +36,3 @@ $('.our-dished').slick({
       } 
     ]
   });
-
-  
