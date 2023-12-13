@@ -1,7 +1,7 @@
-// AOS Initialization
+// AOS.js Initialization
 AOS.init({});
 
-// Slick Slider Carousel
+// Slick.js Carousel Animation Customization
 $('.our-dished').slick({
     dots: true, 
     infinite: false, 
