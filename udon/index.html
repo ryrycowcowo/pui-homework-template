@@ -1,156 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang = "en">
 
   <head>
-    <title>Udon Home</title>
-
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
-    
-    <!-- Links to JS & CSS files -->
-    <script type = "text/javascript" defer src = "main.js"></script>
-    <link rel = "stylesheet" href = "udonStyle.css" />
 
-    <!-- Bootstrap -->
-    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin = "anonymous">
-    <link href = "https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel = "stylesheet">
-    
-    <!-- Google Fonts Families -->
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https://fonts.googleapis.com/css2?family=Itim&display=swap" rel = "stylesheet">
-    
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https://fonts.googleapis.com/css2?family=Itim&family=Khand&display=swap" rel = "stylesheet">
+    <title>Udon</title>
 
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https://fonts.googleapis.com/css2?family=Jost&display=swap" rel = "stylesheet">
-
-    <!-- Scroll Reveal Animation -->
-    <script src = "https://unpkg.com/scrollreveal"></script>
+    <!-- Links to CSS Files --> 
+    <link rel = "stylesheet" type = "text/css" href = "css/slick.css"/> 
+    <link rel = "stylesheet" type = "text/css" href = "css/slick-theme.css"/>
+    <link rel = "stylesheet" href = "css/aos.css" >
+    <link rel = "stylesheet" href = "css/bootstrap-frame.css">
+    <link rel = "stylesheet" href = "css/style.css">
   </head>
 
-  <body>
-    <main class = "prototype">
-      <div class = "background">
+  <body id = "page-top"> 
+    <section class = "main">
 
-        <!-- Navigation Menu -->
-        <header>
-          <nav class = "nav">
-            <a class = "title" href = "./index.html">udon</a>
-            <div class = "frame">
-              <!-- <h1 class = "menu">Recipes</h1> -->
-              <h1 class = "menu">About</h1>
+        <!-- Header -->
+        <nav class = "navbar navbar-expand-lg">
+            <div class = "container">   
+                    <div class = "d-none d-lg-block"> 
+                        <a class = "navbar-brand" href = "./index.html"> udon </a> 
+                    </div> 
             </div>
-          </nav>
-        </header>
+        </nav> 
 
-        <!-- Interactive Splash -->
-        <div class = "splash">
-          
-          <!-- <div class = "toggle">
-            <div class = "broth">Broth</div>
-            <div class = "sauce">Sauce</div>
-          </div> -->
-
-          <div class = center>
-            <p class = "splashMessage">WHERE TRADITION MEETS FLAVOR: UDON MARVELS AWAIT YOU</p>
-            <img class = "kitsune" src = "../assets/udonImages/broth/kitsune.png"/>
-          </div>
-
-          <div class = "selection">
-            <div class = "dish-types">DISH TYPES:</div>
-            <div class = "broth">
-              <img class = "kake" src = "../assets/udonImages/broth/kake.png"/>
-              <img class = "kitsune1" src = "../assets/udonImages/broth/kitsune.png"/>
-              <img class = "nabeyaki" src = "../assets/udonImages/broth/nabeyaki.png"/>
-              <img class = "sukiyaki" src = "../assets/udonImages/broth/sukiyaki.png"/>
-              <img class = "tantan" src = "../assets/udonImages/broth/tantan.png"/>
-              <img class = "tonkatsu" src = "../assets/udonImages/broth/tonkatsu.png"/>
+        <!-- Splash Screen -->
+        <div class = "container main-wrapper">
+            <div class = "row align-items-center">
+                <div class = "col-lg-6 mb-5 mb-lg-0">
+                    <div class = "content text-center text-lg-start" data-aos = "fade-right">
+                        <span>Udon Marvel Awaits you</span>
+                        <h1>Where <span>Tradition</span>
+                            Meets Flavor</h1>
+                    </div>
+                </div>
+                <div class = "col-lg-6 ">
+                    <div class = "udon-img">
+                        <img src = "images/udon-img.svg" alt = "" class = "img-fluid">
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
-        <!-- What Is Udon -->
-        <div class = "what reveal">
-          <div class = "group">
-            <div class = "sectionTitle">WHAT IS UDON?</div>
-            <p class = "description">
-              Udon are chewy Japanese noodles made from wheat flour, water, and salt, typically served as a noodle soup
-              in a hot dashi-based broth, but they can also be served cold, with a dipping sauce. They’re thicker than
-              buckwheat soba noodles, typically 2-4 mm, and can be either flat or rounded.
-            </p>
-          </div>
-
-          <div>
-            <img class = "sanuki" src = "../assets/udonImages/others/sanuki.png"/>
-          </div>
-        </div>
-
-        <!-- How To Eat It -->
-        <div class = "how reveal">
-          <div class = "group">
-            <div class = "sectionTitle">HOW TO EAT IT</div>
-            <p class = "description">
-              When eating udon, it's common to use chopsticks to lift the noodles. It's also acceptable to make
-              noise (via slurping) while eating in Japanese culture, as it's believed to enhance the flavors and cool
-              down the hot noodles.
-            </p>
-          </div>
-
-          <div>
-            <img class = "chopsticks" src = "../assets/udonImages/others/chopsticks.png"/>
-          </div>
-        </div>
-
-        <!-- History -->
-        <div class = "history reveal">
-          <div class = "sectionTitle">HISTORY</div>
-          <p class = "description">
-            The earliest iteration of udon noodles likely originated in China and was introduced to Japan during the
-            Tang dynasty (618–907 CE). Legend says Kukai, a monk from Kagawa, who went to China as a research scholar
-            transported udon back to Japan. The original udon may have been closer to a dumpling (flattened round dough)
-            than a noodle, and in some parts of Japan, udon is still cut into squares rather than the long strands that
-            became standard by the early fourteenth century.<br />Traditionally made at home, udon began to be sold in
-            specialty stalls after the popularity of commercial in the seventeenth century. Today, udon is eaten
-            throughout Japan but especially in the south, from Osaka to Kyushu.
-          </p>
-        </div>
-
-        <!-- Regional Udon Noodles Type -->
-        <div class = "regional reveal">
-          <div class = "group"> 
-            <div class = "sectionTitle">REGIONAL UDON NOODLES TYPE</div>
-            <p class = "description">
-              Most people are already familiar with the thick and square-shaped sanuki udon as it’s the “default” udon
-              served in Japanese restaurants. However, udon exists in a wide variety of forms and shapes, and many regions
-              in Japan have their own spin on things. Here are 5 regional types of udon that are especially popular.
-            </p>
-          </div>
-          
-          <!-- Map -->
-          <div class = "map reveal">
-            <div class = "dots">
-              <button type = "button" class = "ellipse" data-bs-container = "body" data-bs-toggle = "popover" data-bs-placement = "top" data-bs-content = "Tokyo"> 
-              </button>
-              <!-- <div class = "ellipse"></div> -->
-              <div class = "ellipse-2"></div>
-              <div class = "ellipse-3"></div>
-              <div class = "ellipse-4"></div>
-              <div class = "ellipse-5"></div>
-              <div class = "ellipse-6"></div>
+        <!-- Animated Arrow -->
+        <div class = "container">
+            <div class = "row justify-content-center">
+                <div class = "col-lg-6 text-center">
+                    <a href = "#intro" style = "margin: auto;">
+                        <div class = "box">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </a>
+                </div>
             </div>
-            <div>
-              <img class = "mapImg" src = "../assets/udonImages/others/japanmap.png"/>
-            </div>
-          </div>
-        </div>        
-      </div>
-    </main>
+        </div>
+    </section>
 
-    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity = "sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin = "anonymous"></script>
+    <!-- Introduction -->
+    <section class = "intro" id = "intro">
+        <div class = "container">
+            <div class = "row align-items-center">
+                <div class = "col-lg-6 mb-5 mb-lg-0">
+                    <div class = "about-content text-center text-lg-start" data-aos = "fade-right">
+                        <span>Introduction</span>
+                        <h2><span>What</span> Are They?</h2> 
+                        <p>Udon are chewy Japanese noodles made from wheat flour, water, and salt, typically served as a noodle soup in a hot dashi-based broth or served in a hot/cold sauce. 
+                           They’re thicker than buckwheat soba noodles—typically 2-4 mm—and can be either flat or rounded.</p>
+
+                        <ul class = "list-unstyled text-start text-lg-start">
+                            <li><img src = "images/checkmark.svg"> Wonderful texture: deliciously soft and chewy</li>
+                            <li><img src = "images/checkmark.svg"> Eaten during any time of the year: both hot and cold options</li>
+                            <li><img src = "images/checkmark.svg"> Wide variety: broth-based or sauce-based</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "col-lg-6">
+                    <div class = "about-img" data-aos = "fade-left">
+                        <div class = "row g-3">
+                            <div class = "col-12">
+                                <img src = "images/curry-katsu.svg" class = "img-fluid" alt = "curry katsu">
+                            </div>
+                            <div class = "col-6">
+                                <img src = "images/dipping-udon.svg" class = "img-fluid" alt = "dipping udon">
+                            </div>
+                            <div class = "col-6">
+                                <img src = "images/yaki-udon.svg" class = "img-fluid" alt = "yaki udon">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <!-- Dish Types -->
+    <section class = "dishes-slider" id = "menu">
+        <div class = "container">
+            <div class = "row justify-content-center">
+                <div class = "col-lg-6">
+                    <div class = "sec-heading text-center">
+                        <span>Dish Types</span>
+                        <h2><span>Choose</span> Your Udon Dish</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Carousel -->
+            <div class = "row">
+                <div class = "col-lg-12">
+                    <div class = "our-dished">
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/kake-udon.svg" alt = "kake">
+                            <h2><span>Kake</span> Udon</h2>
+                            <h3>Minimal sanuki-style udon served in traditional warm dashi broth</h3>
+                            <p>Warm dashi-based broth
+                                <br>Scallions 
+                                <br>Ginger
+                            </p>  
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/bukkake-udon.svg" alt = "bukkake">
+                            <h2><span>Bukkake</span> Udon</h2>
+                            <h3>Typically cold broth poured over chilled noodles, then topped with a variety of different garnishes</h3>
+                            <p>Cold soy-sauce/dashi-based broth
+                                <br>Grated daikon 
+                                <br>Scallions 
+                                <br>Onsen egg
+                                <br>Niku (beef)
+                                <br>Ginger
+                                <br>Okra
+                                <br>Bonito flakes
+                                <br>Tempura pieces
+                            </p>  
+                                
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/nabeyaki-udon.svg" alt = "nabeyaki">
+                            <h2><span>Nabeyaki</span> Udon</h2>
+                            <h3>Hot udon noodle soup traditionally served in Japanese clay pot, typically topped with a variety of different ingredients</h3>
+                            <p>Hot dashi-based broth
+                                <br>Kamaboko (fish cake)
+                                <br>Mushrooms 
+                                <br>Scallions 
+                                <br>Onsen egg
+                                <br>Shrimp tempura
+                                <br>Vegetables (spinach or bok choy)
+                                <br>Aburaage (deep-fried tofu pouch)
+                            </p>
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/sukiyaki-udon.svg" alt = "sukiyaki">
+                            <h2><span>Sukiyaki</span> Udon</h2>
+                            <h3>Hotpot-style (nabemono) udon recipe served in rich broth with variety of toppings</h3>
+                            <p>Hot soy-sauce/dashi-based broth
+                                <br>Mushrooms
+                                <br>Scallions 
+                                <br>Onsen egg
+                                <br>Niku (beef)
+                                <br>Vegetables (Napa cabbage, carrots)
+                                <br>Tofu
+                            </p>
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/kitsune-udon.svg" alt = "kitsune">
+                            <h2><span>Kitsune</span> Udon</h2>
+                            <h3>Warm udon served with sliced or whole aburaage (deep-fried tofu pouch)</h3>
+                            <p>Hot dashi-based broth
+                                <br>Kamaboko (fish cake)
+                                <br>Scallions 
+                                <br>Aburaage (deep-fried tofu pouch)
+                            </p>
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/niku-udon.svg" alt = "niku">
+                            <h2><span>Nikutama</span> Udon</h2>
+                            <h3>Sanuki-style udon served in umami-rich sauce, served either hot or cold</h3>
+                            <p>Hot/cold soy-sauce/dashi-based broth
+                                <br>Scallions 
+                                <br>Onsen egg
+                                <br>Niku (beef)
+                            </p>
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/tantan-udon.svg" alt = "tantan">
+                            <h2><span>Tan Tan</span> Udon</h2>
+                            <h3>Sanuki-style udon served in spicy Japanese-style sesame chili broth</h3>
+                            <p>Hot sesame chili-based broth
+                                <br>Scallions 
+                                <br>Ground spicy soy meat
+                                <br>Bok choy
+                            </p>
+                        </div> 
+                        <div class = "dish-name">
+                            <img class = "img-fluid w-100" src = "images/curry-udon.svg" alt = "curry">
+                            <h2><span>Curry</span> Udon</h2>
+                            <h3>Udon served in Japanese curry sauce</h3>
+                            <p>Curry sauce
+                                <br>Scallions 
+                                <br>Onsen egg
+                                <br>Niku (beef)
+                            </p>
+                        </div> 
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eating Guide -->
+    <section class = "speciality">
+        <div class = "container">
+            <div class = "row align-items-center">
+                <div class = "col-lg-6 mb-5 mb-lg-0 order-2 order-md-1">
+                    <div class = "speciality-img text-center" data-aos = "fade-right">
+                        <img src = "images/udon-noodles.gif" class = "img-fluid" alt = "chopsticks holding udon">
+                    </div>
+                </div>
+                <div class = "col-lg-6 mb-5 mb-lg-0  order-1 order-md-2">
+                    <div class = "speciality-content ps-lg-5 text-center text-lg-start" data-aos = "fade-left">
+                        <span>Eating Guide</span>
+                        <h3>How To Eat <br> <span>Udon Noodles</span></h3>
+                        <p>When eating udon, it's common to use chopsticks to lift the noodles. 
+                           It's also acceptable to make noise (via slurping) while eating in Japanese culture, as it's believed to enhance the flavors and cool down the hot noodles.
+                           As mentioned earlier, there are 2 main ways to enjoy udon noodles: either in a warm broth or with a cold/hot sauce. 
+                           There is a wide variety of toppings you can add to elevate your udon experience, such as seaweed, scallions, beef, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- History -->
+    <section class = "text-sec map">
+        <div class = "container">
+            <div class = "row justify-content-center">
+                <div class = "col-lg-9 text-center" data-aos = "fade-up">
+                    <h2><span>History</span> of Udon</h2>
+                    <p>The earliest iteration of udon noodles likely originated in China and was introduced to Japan during the Tang dynasty (618–907 CE). 
+                       Legend says Kukai, a monk from present-day Kagawa Prefecture, who went to China as a research scholar transported udon back to Japan. 
+                       Located in the small town of Ayagawa on Shikoku Island, Takinomiya shrine is believed to be the birthplace of udon, which has a stone relic marking where the first udon was made. 
+                       Kukai taught his nephew Chisen the recipe he learned in China and it is said the family ate udon at this shrine. 
+                       Back then, the original udon may have been closer to a dumpling (flattened round dough) than a noodle, and in some parts of Japan, udon is still cut into squares rather than the long strands that became standard by the early fourteenth century.
+                    </p>
+                    <p>Traditionally made at home, udon began to be sold in specialty stalls after the popularity of commercial in the seventeenth century. 
+                       People kneaded flour, rolled dough, and cut noodles in the same process as we see today.
+                       Some udon shops that date back to the Edo period continue to operate today.
+                       One udon shop, in particular, stands out as a 400-year-old business located in a preserved traditional Japanese inn. 
+                       Today, udon is eaten throughout Japan but especially in the south, from Osaka to Kyushu.
+                       Its popularity within Japan has quickly spread across the world today and many people in other countries are able to enjoy this delicacy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Types -->
+    <section class = "text-sec noodles">
+        <div class = "container">
+            <div class = "row justify-content-center" >
+                <div class = "col-lg-9 text-center" data-aos = "fade-up">
+                    <h2><span>Regional</span> Udon Noodles Type</h2>
+                    <p>Most people are already familiar with the thick sanuki-style udon as it’s the “default” udon served in Japanese restaurants. 
+                       However, udon exists in a wide variety of forms and shapes, and many regions in Japan have their own spin. 
+                       Here are 11 regional types of udon that are especially popular.
+                    </p>
+                    <p>1. Himokawa udon – Gunma
+                       Traditionally made in Kiryū, a historic mountain city located in Gunma Prefecture, himokawa udon is a type of flat and thin wheat noodle. 
+                       The width of himokawa udon differs from restaurant to restaurant, and it’s not uncommon to find ones that are up to 15cm in width.                         
+                       As the dough is rolled out to a thin sheet, the noodles are much more delicate in texture compared to the chewy sanuki udon. 
+                       Himokawa udon can be enjoyed hot or cold, though it is more difficult to slurp compared to ramen due to its sheer width.
+                    </p>
+                    <p>2. Musashino udon – Tokyo/ Saitama
+                       Musashino udon is a type of udon that originated from the Musashino Plateau, a region that stretches from the Tama area in north-west Tokyo to part of Saitama Prefecture. 
+                       Since there are no large rivers in the area, local agriculture is centred on the production of wheat and barley, which require less water to grow compared to rice. 
+                       Over time, it became customary to make udon with locally grown wheat flour. 
+                       Due to the addition of local wheat, musashino udon is characterised by its slight brown colour, as opposed to the pristine white of ordinary udon noodles. 
+                       Though distinctly chewy like conventional sanuki-style udon, the musashino variant also has a slightly rough texture.
+                    </p>
+                    <p>3. Mimi udon – Tochigi
+                       Shaped like ears, mimi udon is a traditional food that has been passed down from generation to generation in the Senba area of Sano City. 
+                       Though the dish was intended to be preserved food for the new year, it gradually became synonymous with auspiciousness. 
+                       Now a customary dish enjoyed by locals on New Year’s Day, mimi udon is usually served in soya sauce-based broth.
+                    </p>
+                    <p>4. Hippari udon – Yamagata
+                       Hippari udon (ひっぱりうどん) is a regional dish that has its roots in Yamagata Prefecture. 
+                       During winter season, dried udon noodles and canned food are common kitchen staples. 
+                       Dried noodles are boiled and pulled from a pot, then served in individual bowls of dipping sauce made from natto or canned mackerel. 
+                       As one can easily prepare a hot meal without having to brave the cold while grocery shopping, hippari udon became a popular meal during colder months.
+                    </p>
+                    <p>5. Inaniwa udon – Akita 
+                       Boasting a history of over 350 years, inaniwa udon is 1 of the 3 most well-known types of udon noodles in Japan. 
+                       Commonly available in its dried form, inaniwa udon can be identified by its cream colour and distinctive thin strands. 
+                       The raw wheat dough typically goes through a lengthy process of kneading, stretching, twisting, and flattening. 
+                       Once it’s shaped into thin strands, the noodles are then aged for a period of time. 
+                       The air bubbles incorporated into the dough during the production stage allows it to have a smooth texture and light mouthfeel.
+                    </p>
+                    <p>6. Gōsetsu udon – Hokkaido
+                       Gōsetsu udon is made from potato starch instead of wheat flour. 
+                       Originating from the small town of Kutchan, a major potato-producing region in Hokkaido, gōsetsu udon is chewier than your average udon noodle and has a unique texture. 
+                       The udon variant is named gōsetsu (heavy snow) as Kutchan experiences one of the heaviest snowfalls in Hokkaido, accumulating to nearly 2m in height each year. 
+                       Its translucent appearance is also likened to fresh snow.
+                    </p> 
+                    <p>7. Ise udon – Mie
+                       Ise udon is unique to Ise City of Mie Prefecture and known for its distinctive chewiness. 
+                       Extra-thick udon noodles around 1cm in diameter are boiled longer than usual, making them tender and soft.  
+                       Ideally, the exterior of the udon noodles should be slightly mushy while the middle should retain a bit of chewiness and integrity. 
+                       The soft udon noodles are doused in an umami-filled dark sauce that’s made with tamari soya sauce, then topped with sliced green onions. 
+                    </p>
+                    <p>8. Kishimen – Aichi 
+                       Kishimen is a flat udon noodle that has been the soul food of Aichi Prefecture – especially Nagoya – since the Edo Period. 
+                       With a thickness of 1mm and width of up to 8mm, kishimen is characterised by being wider and thinner than ordinary udon noodles.  
+                       Its shape is said to be instrumental in its popularity. 
+                       Locals swear by the flat noodle as it is supposedly better able to absorb the flavours of the broth. 
+                    </p>                        
+                    <p>9. Kinchaku kitsune udon – Nara 
+                       Kinchaku kitsune udon takes wheat noodles and encases them in a pocket of fried tofu. 
+                       The dish was invented in Nara prefecture in 2006 and is now a must-have local speciality for anyone visiting the area. 
+                       Filled to the brim with udon noodles, the aburaage is tied with a string of long green onion. 
+                       The tofu bag, which resembles a drawstring pouch, is served with warm dashi broth. 
+                       To consume, use your chopsticks to tear open the aburaage and reveal the udon noodles hidden within.
+                    </p>
+                    <p>10. Naruchuru udon – Tokushima
+                       Naruchuru udon is a type of thin noodle commonly eaten in Naruto, a coastal city in Tokushima Prefecture. 
+                       As it is handmade, naruchuru udon is characterised by its uneven thickness and length. 
+                       The noodles are served in a light golden broth that’s sweeter than the dashi broth you’d find in most udon dishes. 
+                       Simple toppings such as sliced aburaage, chikuwa (fish cakes), and fresh green onions are local favourites.
+                    </p>
+                    <p>11. Gotō udon – Nagasaki 
+                       Though it’s thin, gotō udon is known for its strong elasticity. 
+                       Originating from the Gotō Islands in Nagasaki Prefecture, the regional speciality is considered 1 of the 3 best udon noodles in Japan. 
+                       However, it’s not as well-known as its counterparts, the sanuki and inaniwa udon.
+                       In Gotō, the udon noodles are traditionally enjoyed through jigoku-daki, a process where the noodles are cooked in pots of boiling water and served straight. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id = "footer">
+        <div class = "footer-bottom">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <div class = "copyright-text text-center">
+                            <p>Made proudly by Ryan Kao</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+    <!-- Links to JS Files -->
+    <script src = "js/bootstrap-frame.js"></script>
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type = "text/javascript" src = "js/slick-lib.js"></script>
+    <script src = "js/aos.js"></script>
+    <script src = "js/script.js"></script>
   </body>
 </html>

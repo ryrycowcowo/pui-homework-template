@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Khand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background: #0D0D0D;
+    font-family: 'Khand', sans-serif;
+}
+
+section {
+    overflow: hidden !important;
+}
+
+/* --Background-- */
+.main {
+    background-image: url('../images/wood.png');
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+/* --Title-- */
+.main .navbar .navbar-brand {
+    color: #FFF; 
+    font-family: 'Itim', cursive;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+/* --Splash Screen-- */
+.main .main-wrapper {
+    padding: 100px 20px;
+}
+/* Splash Text */
+.main .main-wrapper .content span {
+    color: #AB7130; 
+    font-family: Khand;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+}
+.main .main-wrapper .content h1 {
+    color: #FFF; 
+    font-family: Khand;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+    margin-bottom: 32px;
+}
+.main .main-wrapper .content h1 span {
+    color: #AB7130;
+    font-family: Khand;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 68px;
+}
+.main .main-wrapper .content p {
+    color:#FFF;
+    font-family: Khand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 418px;
+    margin-bottom: 32px;
+}
+/* Splash Image */
+.main .main-wrapper .udon-img {
+    position: relative;
+    z-index: 1;
+}
+.main .main-wrapper .udon-img::after {
+    content: "";
+    background-image: url('../images/udon-img-base.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0; 
+    width: 130%; 
+    height: 100%;
+    z-index: -1;
+}
+.main .main-wrapper .udon-img img {
+    animation-name: rotate;
+    animation-duration: 30s !important;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* Splash Image Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+/* Animated Arrow */
+.main .box {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.main .box span {
+	width: 20px;
+	height: 20px;
+  display: block;
+	border-right: 2px solid #AB7130;
+	border-bottom: 2px solid #AB7130;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.main .box span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+.main .box span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+@keyframes animate {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(45deg) translate(10px, 10px);
+	}
+	100% {
+		opacity: 0;
+	}
+} 
+
+/* --Introduction-- */
+.intro {
+    padding: 120px 0;
+}
+.intro .about-content span {
+    color: #AB7130; 
+    font-family: Khand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.intro .about-content h2 {
+    color: #FFF;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; 
+    margin-bottom: 20px;
+}
+.intro .about-content h2 span {
+    color: #AB7130; 
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px; 
+}
+.intro .about-content p {
+    font-family: Khand;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+.intro .about-content ul {
+    margin-bottom: 45px;
+}
+.intro .about-content ul li {
+    color: #FFF;
+    font-family: Khand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 20px;
+}
+
+/* --Slider Carousel-- */
+.dishes-slider {
+    width: 100%; 
+    padding: 100px 0;
+
+    background-image: url('../images/slider-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* Category Heading */
+.dishes-slider .sec-heading span {
+    color: #AB7130; 
+    font-family: Khand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.dishes-slider .sec-heading {
+    margin-bottom: 50px;
+}
+.dishes-slider .sec-heading h2 {
+    color: #fff;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+}
+.dishes-slider .sec-heading h2 span {
+    color: #AB7130;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+}
+/* Dish Names */
+.dishes-slider .dish-name span {
+    color: #AB7130; 
+    font-family: Khand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.dishes-slider .dish-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.dishes-slider .dish-name h2 {
+    color: #fff;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px;
+}
+.dishes-slider .dish-name h3 {
+    color: #fff;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.dishes-slider .dish-name p {
+    color: #747474;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+}
+/* Slider Arrows */
+.dishes-slider .slick-next:before {
+    content: url("../images/slider-arrow-right.svg");
+}
+.dishes-slider .slick-prev:before {
+    content: url("../images/slider-arrow-left.svg");
+}
+/* Slider Animations */
+.dishes-slider .slick-slide {
+    margin: 0 5px; /* Adjust the margin value as needed */
+    cursor: pointer;
+  
+}
+.dishes-slider .slick-slide:hover img {
+    margin-top: -10px;
+    transition: 1s all;
+}
+
+/* --Eating Guide-- */
+.speciality {
+    padding: 50px 0 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.speciality .speciality-content span {
+    color: #AB7130; 
+    font-family: Khand;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.speciality .speciality-content h3 {
+    color: #FFF;  
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+}
+.speciality .speciality-content h3 span {
+    color: #AB7130;
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    display: inline-flex;
+    line-height: 56px;
+    margin-bottom: 32px;
+}
+.speciality .speciality-content p {
+    color: #FFF;
+    font-family: Khand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+/* --History & Regional Types-- */
+.text-sec {
+    width: 100%;
+    padding: 150px 0;  
+}
+.map { 
+    background:  url('../images/japan-map.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.noodles { 
+    background:  url('../images/sanuki.svg');
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.text-sec h2 {
+    color: #fff;
+    font-kerning: none;
+    font-family: Khand;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 40px;
+}
+.text-sec  h2 span {
+    color: #AB7130; 
+} 
+.text-sec p {
+    color: #FFF; 
+    font-family: Khand;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 171%; 
+}
+
+/* --Footer-- */
+footer .footer-bottom {
+    background-color: #AB7130;
+    padding: 20px 0;
+}
+footer .footer-bottom p {
+    margin-bottom: 0px;
+    color: #ffffff; 
+    font-family: Khand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+/* --Responsive Media Queries-- */
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 20px 0;
+    }
+
+    .text-sec {
+        padding: 50px 0 ;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        overflow-x: hidden !important;
+    }
+    .slick-arrow {
+        display: none !important;
+    }
+}
