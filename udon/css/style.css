@@ -278,7 +278,7 @@ section {
     line-height: 28px;
 }
 .dishes-slider .dish-name p {
-    color: #747474;
+    color: #b0b0b0;
     font-kerning: none;
     font-family: Khand;
     font-size: 18px;
@@ -375,7 +375,7 @@ section {
     line-height: 56px;
     margin-bottom: 40px;
 }
-.text-sec  h2 span {
+.text-sec h2 span {
     color: #AB7130; 
 } 
 .text-sec p {
@@ -386,6 +386,10 @@ section {
     font-weight: 400;
     line-height: 171%; 
 }
+.text-sec p span {
+    color: #AB7130;
+    font-weight: 600; 
+} 
 
 /* --Footer-- */
 footer .footer-bottom {
